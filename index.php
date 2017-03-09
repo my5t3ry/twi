@@ -146,7 +146,7 @@ foreach($r as $l){
 ?>
         </main>
         <footer>
-            <p>web interface web for <a href="http://twtxt.readthedocs.io" rel="_blank">twtxt</a> timeline</p>
+            <p>web interface web for <a href="http://twtxt.readthedocs.io" rel="_blank">twtxt</a> file</p>
         </footer>
     </body>
 </html>

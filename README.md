@@ -8,7 +8,7 @@
                  
 ## twtxt web interface
 
-**twi** is a web interface for your [twtxt](https://twtxt.readthedocs.io/en/latest/) timeline. It is written in PHP. It shows your twt.txt file on your website in HTML format.
+**twi** is a web interface for your [twtxt](https://twtxt.readthedocs.io/en/latest/) file. It is written in PHP. It shows your twt.txt file on your website in HTML format.
 
 more about **twtxt** µblog at https://twtxt.readthedocs.io/en/latest/ 
 
@@ -23,3 +23,6 @@ Configure it adding your own values to variables at the top of the file.
 - search engine by tags
 - link to other @user
 - customize header
+
+### SAMPLE
+See on my website : http://www/skingrapher.com/t/index.php

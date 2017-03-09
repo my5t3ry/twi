@@ -25,4 +25,4 @@ Configure it adding your own values to variables at the top of the file.
 - customize header
 
 ### SAMPLE
-See on my website : http://www/skingrapher.com/t/index.php
+See on my website : http://www.skingrapher.com/t/index.php

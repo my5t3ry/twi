@@ -21,5 +21,5 @@ Configure it adding your own values to variables at the top of the file.
 ### TODO
 
 - search engine by tags
-- link to other @user file
+- link to other @user
 - customize header

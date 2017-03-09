@@ -10,7 +10,7 @@
 
 **twi** is a web interface for your [twtxt](https://twtxt.readthedocs.io/en/latest/) timeline. It is written in PHP. It shows your twt.txt file on your website in HTML format.
 
-More about **twtxt** µblog at https://twtxt.readthedocs.io/en/latest/ 
+more about **twtxt** µblog at https://twtxt.readthedocs.io/en/latest/ 
 
 ### INSTALL
 Install index.php anywhere you want on your web host and rename it if necessary.

@@ -1,7 +1,7 @@
 # twi
 ## twtxt web interface
 
-*twi* shows your twt.txt file on your website in HTML format.
+**twi** shows your twt.txt file on your website in HTML format.
 
 ### TODO
 

@@ -24,4 +24,4 @@ Configure it adding your own values to variables at the top of the file.
 - customize header
 
 ### SAMPLE
-See sample on my website : http://www.skingrapher.com/t/index.php
+See sample on my website : http://www.skingrapher.com/t/

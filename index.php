@@ -23,7 +23,7 @@ contact: skingrapher at dev@skingrapher.com
 $author="skingrapher"; // author of twtfile
 $index_url="http://skingrapher.com"; // index url of your website homepage
 $metatitle="skingrapher's notes"; // content for title tag
-$twturl="/t/twt.txt"; // url of the twtfile - can be relative or absolute
+$twturl="/t/tw.txt"; // url of the twtfile - can be relative or absolute
 $reverse=true; // boolean - reverse timeline: true or false
 $lang="fr";
 ?>
@@ -152,7 +152,7 @@ foreach($r as $l){
 ?>
         </main>
         <footer>
-            <p>web interface web for <a href="http://twtxt.readthedocs.io" rel="_blank">twtxt</a> file</p>
+            <p><a href="https://github.com/skrypte/twi" title="sources on github">twi</a>, a web interface for <a href="http://twtxt.readthedocs.io" rel="_blank">twtxt</a> file</p>
         </footer>
     </body>
 </html>

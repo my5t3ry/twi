@@ -126,19 +126,20 @@ foreach($r as $l){
     if(!empty($l)){
         // patterns and replacements
         // replace date between time tags
+        $l=htmlentities($l);
         $date_pattern="/(^\d{4}(-\d{2}){2})T((\d{2}:){2}\d{2})\+\d{2}:\d{2}\s/";
         $date_replace="<time datetime='$1T$3'>$1 $3</time>&nbsp;: ";
         $l=preg_replace($date_pattern,$date_replace,$l);
         // replace 0< by @
-        $at_pattern="/(@<)+/";
+        $at_pattern="/(@&lt;)+/";
         $at_replace="@";
         $l=preg_replace($at_pattern,$at_replace,$l);
         // replace @user between a tags
-        $user_pattern="/(@\w+)(?:\s)(https*:\/{2}(\w+\.)+(\w+\/*\.*)*)*(?:>)/";
+        $user_pattern="/(@\w+)(?:\s)(https*:\/{2}(\w+\.)+(\w+\/*\.*)*)*(?:&gt;)/";
         $user_replace="<a href='$2'>$1</a>";
         $l=preg_replace($user_pattern,$user_replace,$l);
         // replace url between external a tags
-        $url_pattern="/(?:\s)(https*:\/{2}(\w+\.)+(-*\w+\/*)+)+/";
+        $url_pattern="/(?:\s)(https*:\/{2}(\w+\.)+(-*\w+\/*\.*)+)+/";
         $url_replace=" <a href='$1' rel='external'>$1</a>";
         $l=preg_replace($url_pattern,$url_replace,$l);
         // replace hashtag between span tags for future css
@@ -155,5 +156,4 @@ foreach($r as $l){
             <p><a href="https://github.com/skrypte/twi" title="sources on github">twi</a>, a web interface for <a href="http://twtxt.readthedocs.io" rel="_blank">twtxt</a> file</p>
         </footer>
     </body>
-</html>
-                
+</html>              

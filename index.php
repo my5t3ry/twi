@@ -24,7 +24,7 @@ $author = "sash"; // author of twtfile
 $index_url = "http://shitkatapult.org"; // index url of your website homepage
 $metatitle = "sash's notes"; // content for title tag
 $twturl = "http://shitkatapult.org/twtxt/twtxt.txt"; // url of the twtfile - can be relative or absolute
-$reverse = true; // boolean - reverse timeline: true or false
+$reverse = false; // boolean - reverse timeline: true or false
 $lang = "en";
 ?>
 <html lang="<?php print $lang; ?>">
@@ -278,7 +278,8 @@ $lang = "en";
 </html>
 
 <?php
-function file_get_contents_utf8($fn) {
+function file_get_contents_utf8($fn)
+{
     $content = file_get_contents($fn);
     return mb_convert_encoding($content, 'UTF-8',
         mb_detect_encoding($content, 'UTF-8, ISO-8859-1', true));

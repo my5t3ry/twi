@@ -252,8 +252,10 @@ $lang = "en";
             $l = preg_replace($at_pattern, $at_replace, $l);
             // replace @user between a tags
             $user_pattern = "/(@\w+)(?:\s)(https*:\/{2}(\w+\.)+(\w+\/*\.*)*)*(?:&gt;)/";
-            $user_replace = "<a href='$2'>$1</a>";
-            $l = preg_replace($user_pattern, $user_replace, $l);
+            preg_match("#//(.+?)/#", $l, $matches);
+
+            $user_replace = "<a href='$matches[1]'>$matches[0]</a>";
+//            $l = preg_replace($user_pattern, $user_replace, $l);
             // replace url between external a tags
             $url_pattern = "/(?:\s)(https*:\/{2}(\w+\.)+(-*\w+\/*\.*)+)+/";
             $url_replace = " <a href='$1' rel='external'>$1</a>";

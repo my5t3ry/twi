@@ -258,8 +258,8 @@ $lang = "en";
 //            $l = preg_replace($user_pattern, $user_replace, $l);
             // replace url between external a tags
             $url_pattern = "/(?:\s)(https*:\/{2}(\w+\.)+(-*\w+\/*\.*)+)+/";
-            $url_replace = " <a href='$1' rel='external'>$1</a>";
-            $l = preg_replace($url_pattern, $url_replace, $l);
+            $l = " <a href='$1' rel='external'>$1</a>";
+//            $l = preg_replace($url_pattern, $url_replace, $l);
             // replace hashtag between span tags for future css
             $tag_pattern = "/#+/";
             $tag_replace = "<span class='tag'>" . htmlentities("$0") . "</span>";

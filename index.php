@@ -24,7 +24,6 @@ $author = "sash"; // author of twtfile
 $index_url = "http://shitkatapult.org"; // index url of your website homepage
 $metatitle = "sash's notes"; // content for title tag
 $twturl = "http://shitkatapult.org/twtxt/twtxt.txt"; // url of the twtfile - can be relative or absolute
-$reverse = false; // boolean - reverse timeline: true or false
 $lang = "en";
 ?>
 <html lang="<?php print $lang; ?>">
@@ -237,9 +236,7 @@ $lang = "en";
 <main>
     <?php
     $getfile = file_get_contents_utf8($twturl);
-    if ($reverse === true) {
-        $r = array_reverse(explode("\n", $getfile));
-    }
+    $r = explode("\n", $getfile);
     foreach ($r as $l) {
         // don't print empty lines
         if (!empty($l)) {

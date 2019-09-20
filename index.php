@@ -23,7 +23,7 @@ contact: skingrapher at dev@skingrapher.com
 $author="sash"; // author of twtfile
 $index_url="http://shitkatapult.org"; // index url of your website homepage
 $metatitle="sash's notes"; // content for title tag
-$twturl="/twtxt/twtxt.txt"; // url of the twtfile - can be relative or absolute
+$twturl="http://shitkatapult.org/twtxt/twtxt.txt"; // url of the twtfile - can be relative or absolute
 $reverse=true; // boolean - reverse timeline: true or false
 $lang="en";
 ?>

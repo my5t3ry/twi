@@ -252,14 +252,12 @@ $lang = "en";
             $l = preg_replace($at_pattern, $at_replace, $l);
             // replace @user between a tags
             $user_pattern = "/(@\w+)(?:\s)(https*:\/{2}(\w+\.)+(\w+\/*\.*)*)*(?:&gt;)/";
-            preg_match("#//(.+?)/#", $l, $matches);
-
-            $l = "<a href='$matches[1]'>$matches[0]</a>";
-//            $l = preg_replace($user_pattern, $user_replace, $l);
+            $user_replace = "<a href='$2'>$1</a>";
+            $l = preg_replace($user_pattern, $user_replace, $l);
             // replace url between external a tags
-            $url_pattern = "/(?:\s)(https*:\/{2}(\w+\.)+(-*\w+\/*\.*)+)+/";
-//            $l = " <a href="'++'"$1' rel='external'>$1</a>";
-//            $l = preg_replace($url_pattern, $url_replace, $l);
+            $url_pattern = "@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@";
+            $url_replace = " <a href='$1' rel='external'>$1</a>";
+            $l = preg_replace($url_pattern, $url_replace, $l);
             // replace hashtag between span tags for future css
             $tag_pattern = "/#+/";
             $tag_replace = "<span class='tag'>" . htmlentities("$0") . "</span>";

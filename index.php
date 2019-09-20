@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <!--
- _            _ 
+ _            _
 | |          (_)
-| |___      ___ 
+| |___      ___
 | __\ \ /\ / / |
 | |_ \ V  V /| |
  \__| \_/\_/ |_|
-                
+
 TWTXT WEB INTERFACE
 shows content from twt.txt in HTML format on web server
 written in PHP
 change values in next variables
 twi on github: http://github.com/skrypte/twi
 contact: skingrapher at dev@skingrapher.com
--->                      
+-->
 <?php
 // ======================================
 //
 // V A R I A B L E S   T O   C H A N G E
 //
 // ======================================
-$author="skingrapher"; // author of twtfile
-$index_url="http://skingrapher.com"; // index url of your website homepage
-$metatitle="skingrapher's notes"; // content for title tag
-$twturl="/t/tw.txt"; // url of the twtfile - can be relative or absolute
+$author="sash"; // author of twtfile
+$index_url="http://html.shitkatapult.org"; // index url of your website homepage
+$metatitle="sash's notes"; // content for title tag
+$twturl="/twtxt/twtxt.txt"; // url of the twtfile - can be relative or absolute
 $reverse=true; // boolean - reverse timeline: true or false
-$lang="fr";
+$lang="en";
 ?>
 <html lang="<?php print $lang; ?>">
     <head>
-    
+
         <!-- M E T A   T A G S -->
 
         <meta charset="UTF-8">
@@ -42,15 +42,15 @@ $lang="fr";
         <title><?php print $metatitle; ?></title>
 
         <!-- M E D I A   Q U E R I E S -->
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- I C O N -->
 
         <link rel="icon" type="image/svg+xml" href="http://skingrapher.com/m/assets/logo.svg">
-            
+
         <!-- C S S -->
-        
+
         <style rel="stylesheet" type="text/css">
 /* LAYOUT */
 html{box-sizing:border-box;}
@@ -156,4 +156,4 @@ foreach($r as $l){
             <p><a href="https://github.com/skrypte/twi" title="sources on github">twi</a>, a web interface for <a href="http://twtxt.readthedocs.io" rel="_blank">twtxt</a> file</p>
         </footer>
     </body>
-</html>              
+</html>
